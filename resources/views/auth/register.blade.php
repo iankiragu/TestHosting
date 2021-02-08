@@ -14,8 +14,8 @@
                 <h2 class="fs-xxl fw-500 text-white text-center">
                     Register now, its free!
                     <small class="h3 fw-300 mt-3 mb-5 text-white opacity-60 hidden-sm-down">
-                        Your registration is free. Enjoy TriboreHealth on your mobile, desktop or tablet.
-                        <br>It is ready to go wherever you go!
+                        Your registration is free. Gain access to Small Sips on your mobile, desktop or tablet.
+                        <br>We go wherever you go!
                     </small>
                 </h2>
             </div>

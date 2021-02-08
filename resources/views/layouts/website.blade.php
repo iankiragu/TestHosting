@@ -32,7 +32,7 @@
         <header class="ip-header" >
             <div class="ip-loader">
                 <div class="text-center">
-                    <div class="ip-logo"><img  src="{{asset('website/img/logo_tribo_new.png')}}" height="50" width="294" alt="logo"></div>
+                    <div class="ip-logo"><img  src="{{asset('website/img/Capture.png')}}" height="50" width="294" alt="logo"></div>
                 </div>
                 <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
                     <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,39.3,10z"/>
@@ -56,8 +56,8 @@
 {{--                        </ul>--}}
                     </div>
                     <div class="top-header__links col-sm-8">
-                        <a href="tel:+522 234 56789"><i class="icon-header icon-call-in color_primary"></i> +254 - 792 - 651 - 712 </a>
-                        <a class="border-right" href="mailto:Support@HealthCare.org"><i class="icon-header icon-envelope-open color_primary"></i> info@triborehealth.com</a>
+                        <a href="tel:+522 234 56789"><i class="icon-header icon-call-in color_primary"></i> +254 - 723 - 142 - 323 </a>
+                        <a class="border-right" href="mailto:Support@HealthCare.org"><i class="icon-header icon-envelope-open color_primary"></i> info@smallsips.com</a>
                     </div>
                 </div>
             </div>

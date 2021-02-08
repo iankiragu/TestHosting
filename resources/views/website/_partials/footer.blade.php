@@ -6,13 +6,13 @@
             <div class="row">
                 <div class="col-sm-4">
                     <section class="footer__section">
-                        <h2 class="footer__title">About Tribore Health</h2>
+                        <h2 class="footer__title">About Small Sips</h2>
                         <i class="decor-brand decor-brand_footer"></i>
                         <p>We provide you with access to medical services remotely and at the comfort of your house.</p>
                         <address class="footer__contacts">
                         </address>
                         <p class="footer__contacts"><i class="footer__icon icon-call-in color_primary"></i>+522 234 56789  / +522 234 56780</p>
-                        <p class="footer__contacts"><i class="footer__icon icon-envelope-open color_primary"></i>info@healthcare-agency.org</p>
+                        <p class="footer__contacts"><i class="footer__icon icon-envelope-open color_primary"></i>info@smallsips.com</p>
                     </section>
                 </div>
                 <section class="footer__section col-sm-4">
@@ -31,10 +31,7 @@
                                 <td>Saturday - Sunday</td>
                                 <td>09:00am - 06:00pm</td>
                             </tr>
-                            <tr>
-                                <td>Emergency Services</td>
-                                <td>24 hours Open</td>
-                            </tr>
+
                             </tbody>
                         </table>
                 </section>

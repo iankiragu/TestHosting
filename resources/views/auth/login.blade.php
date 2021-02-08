@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col col-md-6 col-lg-7 hidden-sm-down">
                 <h2 class="fs-xxl fw-500 mt-4 text-white">
-                    Welcome to the Tribore Health
+                    Welcome to the Small Sips
                     <small class="h3 fw-300 mt-3 mb-5 text-white opacity-60">
 
                         We care about the confidentiality and integrity of your personal data. That is why we need to know who you are. Please go ahead and login with your email and password
@@ -26,7 +26,7 @@
                     </div>
                     <div class="d-flex flex-row opacity-70">
                         <a href="{{route('backend.register.user')}}" class="mr-2 fs-lg fw-500 text-white opacity-70">Create An Account as a Medical Practitioner</a>
-                        <a href="#" class="mr-2 fs-lg fw-500 text-white opacity-70">The Tribore Website</a>
+
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
             </div>
         </div>
         <div class="position-absolute pos-bottom pos-left pos-right p-3 text-center text-white">
-            2020 © Tribore Health&nbsp;<a href='{{asset('/')}}' class='text-white opacity-40 fw-500' title='TriboreHealth' target='_blank'></a>
+            2020 © Small Sips&nbsp;<a href='{{asset('/')}}' class='text-white opacity-40 fw-500' title='TriboreHealth' target='_blank'></a>
         </div>
     </div>
 @stop

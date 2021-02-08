@@ -2,12 +2,12 @@
 
 @section('content')
     <div id="iview" class="main-slider">
-        <div data-iview:thumbnail="{{asset('website/media/slider_main/slider_1.jpg')}}" data-iview:image="{{asset('website/media/slider_main/slider_1.jpg')}}" data-iview:transition="block-drop-random" >
+        <div data-iview:thumbnail="{{asset('website/media/slider_main/counselling.jpg')}}" data-iview:image="{{asset('website/media/slider_main/counselling.jpg')}}" data-iview:transition="block-drop-random" >
             <div class="container">
                 <div class="iview-caption bg-no-caption" data-x="850" data-y="43" data-transition="expandRight">
                     <div class="custom-caption">
                         <p class="slide-title bg-color_second">A Team Of Medical Professionals</p>
-                        <p class="slide-title_second">To Take Care Of Your Health</p>
+                        <p class="slide-title_second">To Take Care Of Your Mental Health</p>
 {{--                        <p class="slide-text">Sed posuere nunc libero pellentesque vitae</p>--}}
 {{--                        <p class="slide-text">Vestibulum tincidunt ante ipsum</p>--}}
 {{--                        <a href="javascript:void(0);" class="btn bg-color_primary">VIEW SERVICES <span class="btn-plus">+</span></a>--}}
@@ -15,9 +15,9 @@
                 </div>
             </div>
         </div>
-        <div data-iview:thumbnail="{{asset('website/media/slider_main/2.jpg')}}" data-iview:image="{{asset('website/media/slider_main/slider_2.jpg')}}" data-iview:transition="block-drop-random" >
+        <div data-iview:thumbnail="{{asset('website/media/slider_main/therapy.jpg')}}" data-iview:image="{{asset('website/media/slider_main/therapy.jpg')}}" data-iview:transition="block-drop-random" >
             <div class="container">
-                <div class="iview-caption  bg-no-caption" data-x="260" data-y="293" data-transition="expandLeft">
+                <div class="iview-caption bg-no-caption" data-x="850" data-y="43" data-transition="expandRight">
                     <div class="custom-caption">
                         <p class="slide-title bg-color_second">A Wide Range of Medical Facilities</p>
                         <p class="slide-title_second">To Ensure You Are Covered</p>
@@ -75,8 +75,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <h1 class="ui-title-block">Welcome to <strong class="font-weight_600">TRIBORE </strong><span class="font-weight-norm color_primary">HEALTH</span></h1>
-                    <div class="ui-subtitle-block">We do care about you & your family’s health</div>
+                    <h1 class="ui-title-block">Welcome to <strong class="font-weight_600"> Small Sips </strong><span class="font-weight-norm color_primary">HEALTH</span></h1>
+                    <div class="ui-subtitle-block">We do care about your Mental Health</div>
                 </div>
                 <section class="advantages__inner col-sm-4"> <i class="icon flaticon-medical51 color_second"></i>
                     <h2 class="ui-title-inner">HealthCare Professionals</h2>
@@ -87,13 +87,13 @@
                 <section class="advantages__inner col-sm-4"> <i class="icon flaticon-medical109 color_second"></i>
                     <h2 class="ui-title-inner">Medical Excellence</h2>
                     <i class="decor-brand"></i>
-                    <p class="ui-text text-center">We as Tribore will ensure that you have the best experience even in the midst of this pandemic. Your safety is our priority</p>
+                    <p class="ui-text text-center">We ensure that you have the best experience even in the midst of this pandemic. Your safety is our priority</p>
 {{--                    <a class="btn btn_small" href="javascript:void(0);">LEARN MORE</a> --}}
                 </section>
                 <section class="advantages__inner col-sm-4"> <i class="icon flaticon-healthcare6 color_second"></i>
-                    <h2 class="ui-title-inner">Emergency Response</h2>
+                    <h2 class="ui-title-inner">Willingness To Help</h2>
                     <i class="decor-brand"></i>
-                    <p class="ui-text text-center">We assure you that we will make it easy for you to get emergency response services no matter where you are. We are with you always.</p>
+                    <p class="ui-text text-center">We assure you that we will make it easy for you to get the necessary mental health services no matter where you are. We are with you always.</p>
 {{--                    <a class="btn btn_small" href="javascript:void(0);">LEARN MORE</a> --}}
                 </section>
             </div>
@@ -120,12 +120,7 @@
 {{--                        <p class="ui-text">Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus  [...]</p>--}}
                         <a class="btn btn_small" href="{{route('website.hospitals')}}">VIEW MORE</a>
                     </div>
-                    <div class="departments-item wow bounceInLeft" data-wow-delay="1s">
-                        <span class="icon-round bg-color_second helper"><i class="icon flaticon-heart8"></i></span>
-                        <h3 class="ui-title-inner">EMERGENCY RESPONSE</h3>
-{{--                        <p class="ui-text">Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus  [...]</p>--}}
-                        <a class="btn btn_small" href="{{route('website.maps')}}">VIEW MAPS</a>
-                    </div>
+
                     <div class="departments-item wow bounceInLeft" data-wow-delay="1s">
                         <span class="icon-round bg-color_second helper"><i class="icon flaticon-lungs4"></i></span>
                         <h3 class="ui-title-inner">DOCTORS</h3>

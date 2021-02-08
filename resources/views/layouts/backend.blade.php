@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>
-        @yield('title','Tribore Health')
+        @yield('title','Small Sips')
     </title>
     <meta name="description" content="@yield('title','Login')">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -143,7 +143,7 @@
             <!-- BEGIN Page Footer -->
             <footer class="page-footer" role="contentinfo">
                 <div class="d-flex align-items-center flex-1 text-muted">
-                    <span class="hidden-md-down fw-700">2020 © Tribore Health&nbsp;<a href='{{asset('/')}}' class='text-white opacity-40 fw-500' title='TriboreHealth' target='_blank'></a></span>
+                    <span class="hidden-md-down fw-700">2020 © Small Sips&nbsp;<a href='{{asset('/')}}' class='text-white opacity-40 fw-500' title='TriboreHealth' target='_blank'></a></span>
                 </div>
             </footer>
             <!-- END Page Footer -->

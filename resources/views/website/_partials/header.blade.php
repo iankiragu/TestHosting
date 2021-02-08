@@ -1,7 +1,7 @@
 <div class="container">
     <div class="header-inner">
         <div class="row">
-            <div class="col-md-4 col-xs-12"> <a href="/" class="logo"> <img class="logo__img" src="{{asset('website/img/logo_tribo_new.png')}}" height="50" width="294" alt="Logo"> </a> </div>
+            <div class="col-md-4 col-xs-12"> <a href="/" class="logo"> <img class="logo__img" src="{{asset('website/img/g875.png')}}" height="50" width="294" alt="Logo"> </a> </div>
             <div class="col-md-8 col-xs-12">
                 <div class="header-block">
 {{--                    <span class="header-label"> <i class="icon-header icon-call-in color_primary"></i>--}}
@@ -80,14 +80,14 @@
                     <div id="navbar-collapse-1" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             <li><a class="{{ Route::current()->getName() == 'website.home' ? ' active' : '' }}" href="{{route('website.home')}}">HOME </a> </li>
-                            <li><a target="_blank" class="{{ Route::current()->getName() == 'website.maps' ? ' active' : '' }}" href="{{route('website.maps')}}">EMERGENCY RESPONSE </a></li>
                             <li><a class="{{ Route::current()->getName() == 'website.hospitals' ? ' active' : '' }}" href="{{route('website.hospitals')}}">HOSPITALS </a></li>
                             <li><a class="{{ Route::current()->getName() == 'website.doctors' ? ' active' : '' }}" href="{{route('website.doctors')}}">DOCTORS </a></li>
                             <li><a class="{{ Route::current()->getName() == 'website.contact' ? ' active' : '' }}" href="{{route('website.contact')}}">CONTACT US </a> </li>
                             <li class="dropdown"><a href="#"  > WELLNESS <b class="caret color_primary"></b> </a>
                                 <ul role="menu" class="dropdown-menu">
+                                    <li> <a target="_blank" href="{{route('website.depression_self_assessment')}}"  > DEPRESSION SELF ASSESMENT</a> </li>
                                 <li> <a target="_blank" href="{{route('website.bmi_calculator')}}"  > BMI CALCULATOR</a> </li>
-                                <li> <a target="_blank" href="{{route('website.depression_self_assessment')}}"  > DEPRESSION SELF ASSESMENT</a> </li>
+
                                 <li> <a target="_blank" href="{{route('website.eatwell_plate')}}"  > EAT WELL PLATE</a> </li>
                                 <li> <a target="_blank" href="{{route('website.healthadvisor')}}"  > HEALTH ADVISOR</a> </li>
                                 <li> <a target="_blank" href="{{route('website.live_well')}}"  > LIVE WELL</a> </li>
@@ -96,8 +96,8 @@
                                 </ul>
                             </li>
                             <li><a class="{{ Route::current()->getName() == 'website.my.appointments' ? ' active' : '' }}" href="{{route('website.my.appointments')}}">MY APPOINTMENTS </a> </li>
-                            <li><a target="_blank" href="https://triborehealthbot.azurewebsites.net/">HEALTH CHECKER </a> </li>
-                        </ul>
+                            {{--<li><a target="_blank" href="https://triborehealthbot.azurewebsites.net/">HEALTH CHECKER </a> </li>
+                      }}  </ul>
 {{--                        <form id="search-global-menu" class="hidden-xs hidden-sm" method="get">--}}
 {{--                            <input type="text" value="" id="search" name="s" >--}}
 {{--                            <button type="submit"><i class="icon-magnifier"></i></button>--}}

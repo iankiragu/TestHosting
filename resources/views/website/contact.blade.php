@@ -30,11 +30,11 @@
                             </li>
                             <li>
                                 <i class="icon icon-call-in"></i>
-                                <a href="tel:+254792651712"><b>Helpline:</b> +254 - 792 - 651 - 712 </a><br>
+                                <a href="tel:+254792651712"><b>Helpline:</b> +254 - 723 - 142 - 323 </a><br>
                             </li>
                             <li>
                                 <i class="icon icon-envelope-open"></i>
-                                <a href="mailto:isaackmotanya6@gmail.com"><b>Email:</b>info@triborehealth.com</a> <br>
+                                <a href="mailto:isaackmotanya6@gmail.com"><b>Email:</b>info@smallsips.com</a> <br>
                             </li>
                         </ul>
                     </div>

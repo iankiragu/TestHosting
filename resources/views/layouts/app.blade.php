@@ -129,8 +129,8 @@
                 <div class="d-flex align-items-center container p-0">
                     <div class="page-logo width-mobile-auto m-0 align-items-center justify-content-center p-0 bg-transparent bg-img-none shadow-0 height-9 border-0">
                         <a href="{{ route('website.home') }}" class="page-logo-link press-scale-down d-flex align-items-center">
-                            <img src="{{ asset('backend/img/logo.png') }}" alt="SmartAdmin WebApp" aria-roledescription="logo">
-                            <span class="page-logo-text mr-1">Tribore Health</span>
+                            <img src="{{ asset('backend/img/logo-red.png') }}" alt="SmartAdmin WebApp" aria-roledescription="logo">
+                            <span class="page-logo-text mr-1">Small Sips</span>
                         </a>
                     </div>
                     @yield('auth-header-options')
@@ -140,7 +140,7 @@
             <div class="flex-1" style="background: url({{asset('backend/img/svg/pattern-1.svg')}}) no-repeat center bottom fixed; background-size: cover;">
                 @yield('content')
                 <div class="position-absolute pos-bottom pos-left pos-right p-3 text-center text-white">
-                    2020 © Tribore Health&nbsp;<a href='{{asset('/')}}' class='text-white opacity-40 fw-500' title='TriboreHealth' target='_blank'></a>
+                    2020 © Small Sips&nbsp;<a href='{{asset('/')}}' class='text-white opacity-40 fw-500' title='TriboreHealth' target='_blank'></a>
                 </div>
             </div>
         </div>
