@@ -171,6 +171,43 @@
                 let image_url = image_path+"/"+data;
                 $('#embed-license-doc').prop('src',image_url);
             });
+
+            d_table.on('click','#suspend-doc',function (event) {
+                event.preventDefault();
+                const _this = event.target;
+                const tr = $(_this).closest('tr');
+                const rowIndex = d_table.row(tr).index();
+                const rowData = d_table.rows(rowIndex).data()[0];
+                let data = {id:rowData.id,name:rowData.full_name}
+                $.ajax({
+                    url: '{{route('backend.suspend.doctor')}}',
+                    data: data,
+                    type: 'POST',
+                    success: function (res) {
+                        toast.fire({
+                            title: 'Success',
+                            text: res.msg,
+                            icon: 'success',
+                            showCancelButton: false,
+                            customClass: {
+                                confirmButton: 'btn btn-alt-success m-1'
+                            },
+                            confirmButtonText: 'Ok',
+                            html: false,
+                            preConfirm: e => {
+                                return new Promise(resolve => {
+                                    setTimeout(() => {
+                                        toastr["success"](res.msg);
+                                        resolve();
+                                    }, 50);
+                                });
+                            }
+                        }).then(result => {
+                            d_table.ajax.reload();
+                        });
+                    }
+                });
+            });
         });
     </script>
 @endpush

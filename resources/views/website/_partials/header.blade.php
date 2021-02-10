@@ -80,28 +80,25 @@
                     <div id="navbar-collapse-1" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             <li><a class="{{ Route::current()->getName() == 'website.home' ? ' active' : '' }}" href="{{route('website.home')}}">HOME </a> </li>
-                            <li><a class="{{ Route::current()->getName() == 'website.hospitals' ? ' active' : '' }}" href="{{route('website.hospitals')}}">HOSPITALS </a></li>
+{{--                            <li><a class="{{ Route::current()->getName() == 'website.hospitals' ? ' active' : '' }}" href="{{route('website.hospitals')}}">HOSPITALS </a></li>--}}
                             <li><a class="{{ Route::current()->getName() == 'website.doctors' ? ' active' : '' }}" href="{{route('website.doctors')}}">DOCTORS </a></li>
                             <li><a class="{{ Route::current()->getName() == 'website.contact' ? ' active' : '' }}" href="{{route('website.contact')}}">CONTACT US </a> </li>
+
                             <li class="dropdown"><a href="#"  > WELLNESS <b class="caret color_primary"></b> </a>
                                 <ul role="menu" class="dropdown-menu">
                                     <li> <a target="_blank" href="{{route('website.depression_self_assessment')}}"  > DEPRESSION SELF ASSESMENT</a> </li>
-                                <li> <a target="_blank" href="{{route('website.bmi_calculator')}}"  > BMI CALCULATOR</a> </li>
+                                <li> <a target="_blank" href="{{route('website.julia')}}"  > Julia Chat</a> </li>
 
-                                <li> <a target="_blank" href="{{route('website.eatwell_plate')}}"  > EAT WELL PLATE</a> </li>
-                                <li> <a target="_blank" href="{{route('website.healthadvisor')}}"  > HEALTH ADVISOR</a> </li>
-                                <li> <a target="_blank" href="{{route('website.live_well')}}"  > LIVE WELL</a> </li>
-                                <li> <a target="_blank" href="{{route('website.weight_loss_guide')}}"  > WEIGHT LOSS GUIDE</a> </li>
-                                <li> <a target="_blank" href="{{route('website.your_blood_pressure')}}"  > YOUR BLOOD PRESSURE</a> </li>
+{{--                                <li> <a target="_blank" href="{{route('website.eatwell_plate')}}"  > EAT WELL PLATE</a> </li>--}}
+{{--                                <li> <a target="_blank" href="{{route('website.healthadvisor')}}"  > HEALTH ADVISOR</a> </li>--}}
+{{--                                <li> <a target="_blank" href="{{route('website.live_well')}}"  > LIVE WELL</a> </li>--}}
+{{--                                <li> <a target="_blank" href="{{route('website.weight_loss_guide')}}"  > WEIGHT LOSS GUIDE</a> </li>--}}
+{{--                                <li> <a target="_blank" href="{{route('website.your_blood_pressure')}}"  > YOUR BLOOD PRESSURE</a> </li>--}}
                                 </ul>
                             </li>
                             <li><a class="{{ Route::current()->getName() == 'website.my.appointments' ? ' active' : '' }}" href="{{route('website.my.appointments')}}">MY APPOINTMENTS </a> </li>
-                            {{--<li><a target="_blank" href="https://triborehealthbot.azurewebsites.net/">HEALTH CHECKER </a> </li>
-                      }}  </ul>
-{{--                        <form id="search-global-menu" class="hidden-xs hidden-sm" method="get">--}}
-{{--                            <input type="text" value="" id="search" name="s" >--}}
-{{--                            <button type="submit"><i class="icon-magnifier"></i></button>--}}
-{{--                        </form>--}}
+                            <li><a class="{{ Route::current()->getName() == 'website.contact' ? ' active' : '' }}" href="/chatify">Chat In App </a> </li>
+
                     </div>
                 </div>
             </div>

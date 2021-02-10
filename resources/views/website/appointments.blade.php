@@ -17,8 +17,8 @@
                 <h2 class="fs-xxl fw-500 text-white text-center">
                     Book an appointment now!
                     <small class="h3 fw-300 mt-3 mb-5 text-white opacity-60 hidden-sm-down">
-                        Enjoy TriboreHealth on your mobile, desktop or tablet.
-                        <br>It is ready to go wherever you go!
+                        Enjoy Small Sips on your mobile, desktop or tablet.
+                        <br>We go wherever you go!
                     </small>
                 </h2>
             </div>

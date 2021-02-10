@@ -193,7 +193,7 @@ class WebsiteController extends Controller
 
     public function process_contact(Request $request){
         $details = $request->all();
-        $mail_sent = Mail::to('isaackmotanya6@gmail.com')->send(new ContactUs($details));
+        $mail_sent = Mail::to('iankiragu63@gmail.com')->send(new ContactUs($details));
         return response()->json(['ok'=>true,'msg'=>'Your email has been sent successfully']);
     }
     public function healthadvisor(Request $request){
@@ -203,7 +203,7 @@ class WebsiteController extends Controller
         return view('website.your_blood_pressure');
     }
     public function bmi_calculator(Request $request){
-        return view('website.bmi_calculator');
+        return view('website.julia');
     }
     public function weight_loss_guide(Request $request){
         return view('website.weight_loss_guide');

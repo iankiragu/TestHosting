@@ -21,7 +21,7 @@ Route::get('/doctors', 'WebsiteController@doctors')->name('website.doctors');
 Route::get('/contact', 'WebsiteController@contact')->name('website.contact');
 Route::get('/healthadvisor', 'WebsiteController@healthadvisor')->name('website.healthadvisor');
 Route::get('/your_blood_pressure', 'WebsiteController@your_blood_pressure')->name('website.your_blood_pressure');
-Route::get('/bmi_calculator', 'WebsiteController@bmi_calculator')->name('website.bmi_calculator');
+Route::get('/Chatbot', 'WebsiteController@bmi_calculator')->name('website.julia');
 Route::get('/weight_loss_guide', 'WebsiteController@weight_loss_guide')->name('website.weight_loss_guide');
 Route::get('/eatwell_plate', 'WebsiteController@eatwell_plate')->name('website.eatwell_plate');
 Route::get('/depression_self_assessment', 'WebsiteController@depression_self_assessment')->name('website.depression_self_assessment');
@@ -56,6 +56,7 @@ Route::get('/dashboard', 'BackendController@dashboard')->name('backend.dashboard
 // Doctors
 Route::get('/manage_doctors', 'BackendController@manage_doctors')->name('backend.manage.doctors')->middleware('verified');
 Route::post('/verify_doctor', 'BackendController@verify_doctor')->name('backend.verify.doctor')->middleware('verified');
+Route::post('/suspend_doctor', 'BackendController@suspend_doctor')->name('backend.suspend.doctor')->middleware('verified');
 //Facilities
 Route::post('/add_facilities','BackendController@add_facilities')->name('add.facilities')->middleware('verified');
 Route::get('/get_facilities','BackendController@get_facilities')->name('backend.get.facilities')->middleware('verified');

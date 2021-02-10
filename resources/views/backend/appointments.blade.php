@@ -30,7 +30,7 @@
                                         <th>Payment Status</th>
                                         <th>Date</th>
                                         <th>Time</th>
-                                        <th>Actions</th>
+
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -81,17 +81,8 @@
             {data: 'has_paid'},
             {data: 'app_time'},
             {data: 'time'},
-            {data: 'actions'},
+            //{data: 'actions'},
         ]
-    });
-
-    appointments_datatable.on('click','#call',function (event) {
-        event.preventDefault();
-        window.location.replace("{{route('backend.make_call')}}")
-    });
-    appointments_datatable.on('click','#video',function (event) {
-        event.preventDefault();
-        window.location.replace("https://video-app-4432-dev.twil.io/");
     });
 
 </script>

@@ -61,20 +61,18 @@
                     </a>
                 </li>
                 <li class="{{ Route::current()->getName() == '' ? ' active' : '' }}">
-                    <a href="#facilities_modal" title="Facilities" data-filter-tags="facilities" data-toggle="modal"
-                       data-target="#facilities_modal">
+                    <a href="/chatify" title="CHAT PATIENTS" data-filter-tags="chat patients">
                         <i class="fal fa-cog"></i>
-                        <span class="nav-link-text" data-i18n="nav.facilities" data-toggle="modal"
-                              data-target="#facilities_modal">Facilities</span>
+                        <span class="nav-link-text" data-i18n="nav.doctorappointments">Chat Patients</span>
                     </a>
                 </li>
-                <li class="{{ Route::current()->getName() == '' ? ' active' : '' }}">
-                    <a href="#services_modal" title="Services" data-filter-tags="services" data-toggle="modal"
-                       data-target="#services_modal">
-                        <i class="fal fa-cogs"></i>
-                        <span class="nav-link-text" data-i18n="nav.services">Services</span>
-                    </a>
-                </li>
+{{--                <li class="{{ Route::current()->getName() == '' ? ' active' : '' }}">--}}
+{{--                    <a href="#services_modal" title="Services" data-filter-tags="services" data-toggle="modal"--}}
+{{--                       data-target="#services_modal">--}}
+{{--                        <i class="fal fa-cogs"></i>--}}
+{{--                        <span class="nav-link-text" data-i18n="nav.services">Services</span>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
             @endcan
             @can('managePatients',App\User::class)
                 @can('accessPortal',App\User::class)
@@ -84,6 +82,12 @@
                             <i class="fal fa-cog"></i>
                             <span class="nav-link-text" data-i18n="nav.doctorappointments" data-toggle="modal"
                                   data-target="#doctor_appointments_modal">Appointments</span>
+                        </a>
+                    </li>
+                    <li class="{{ Route::current()->getName() == '' ? ' active' : '' }}">
+                        <a href="/chatify" title="CHAT PATIENTS" data-filter-tags="chat patients">
+                            <i class="fal fa-cog"></i>
+                            <span class="nav-link-text" data-i18n="nav.doctorappointments">Chat Patients</span>
                         </a>
                     </li>
                 @endcan

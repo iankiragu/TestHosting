@@ -42,6 +42,12 @@ class BackendController extends Controller
         return response()->json(['ok'=>true,'msg'=>$request->name.' has been verified']);
     }
 
+    public function suspend_doctor(Request $request){
+        $id = $request->id;
+        User::where('id',$id)->update(['is_verified'=>0]);
+        return response()->json(['ok'=>true,'msg'=>$request->name.' has been suspended']);
+    }
+
     public function get_doctors_json(){
         $doctors = User::where('role_id','!=',4)
             ->where('role_id','!=',1)->get();
@@ -54,8 +60,9 @@ class BackendController extends Controller
                        data-target="#license_modal">View</button>';
             $doctors[$key]['actions'] =
                 ($doctors[$key]['is_verified'] ?
-                    "<span class='fw-300'></span> <sup class='badge badge-success fw-500 mt-2'>VERIFIED</sup>" :
-                    '<button id="verify-user" type="button" class="btn btn-xs btn-danger waves-effect waves-themed">Verify</button>');
+                    "<span class='fw-300'></span> <sup class='badge badge-success fw-500 mt-2'>VERIFIED</sup> <br> <button id='suspend-doc' type='button' class='btn btn-xs btn-danger waves-effect waves-themed' >Delete</button>" :
+                    "<button id='verify-user' type='button' class='btn btn-xs btn-danger waves-effect waves-themed'>Verify</button>");
+//            $doctors[$key]['Delete']= ;
         }
         return response()->json($doctors);
     }
@@ -164,21 +171,6 @@ class BackendController extends Controller
                 User::where('id',$appointments[$app]['user_id'])->first()->last_name;
             $appointments[$app]['app_time'] =
                 Carbon::createFromDate($appointments[$app]['date'])->diffForHumans();
-            $appointments[$app]['actions'] =
-                '
-                    <button id="call" type="button" class="btn btn-sm btn-default waves-effect waves-themed">
-                        <span class="fal fa-phone-volume mr-1"></span>
-                        Voice Call
-                    </button> <br><br><br>
-                    <button id="video" type="button" class="btn btn-sm btn-default waves-effect waves-themed">
-                        <span class="fal fa-video mr-1"></span>
-                        Video Call
-                    </button> <br><br><br>
-                    <button id="delete" type="button" class="btn btn-sm btn-default waves-effect waves-themed">
-                        <span class="fal fa-window-close mr-1"></span>
-                        Finish Appointment
-                    </button> <br><br><br>
-                ';
         }
         return response()->json($appointments);
     }

@@ -7,7 +7,7 @@
                 <div class="iview-caption bg-no-caption" data-x="850" data-y="43" data-transition="expandRight">
                     <div class="custom-caption">
                         <p class="slide-title bg-color_second">A Team Of Medical Professionals</p>
-                        <p class="slide-title_second">To Take Care Of Your Mental Health</p>
+                        <p class="slide-title_second">Caring for Your Mental Health</p>
 {{--                        <p class="slide-text">Sed posuere nunc libero pellentesque vitae</p>--}}
 {{--                        <p class="slide-text">Vestibulum tincidunt ante ipsum</p>--}}
 {{--                        <a href="javascript:void(0);" class="btn bg-color_primary">VIEW SERVICES <span class="btn-plus">+</span></a>--}}
