@@ -42,7 +42,7 @@ class BackendController extends Controller
         return response()->json(['ok'=>true,'msg'=>$request->name.' has been verified']);
     }
 
-//    doctor suspension
+//    doctor suspend
 
     public function suspend_doctor(Request $request){
         $id = $request->id;
