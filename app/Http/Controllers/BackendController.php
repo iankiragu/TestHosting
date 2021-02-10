@@ -42,6 +42,8 @@ class BackendController extends Controller
         return response()->json(['ok'=>true,'msg'=>$request->name.' has been verified']);
     }
 
+//    Suspend user
+
     public function suspend_doctor(Request $request){
         $id = $request->id;
         User::where('id',$id)->update(['is_verified'=>0]);
